@@ -1,10 +1,15 @@
+function isNum(value){
+	return !isNaN(value)
+  }
+
 function checkSID() {
   let sid = (document.getElementById("sid").value).trim();
-  if (sid.length == 10) {
+  if (sid.length == 10&isNum(sid)) {
     return true;
-  } else {
-    return false;
-  }
+  } 
+  	else{
+		return false;
+	}
 }
 
 function checkCandiNo() {
@@ -12,8 +17,13 @@ function checkCandiNo() {
   if (isNaN(candi) || candi < 1) {
     return false;
   } else {
-    return true;
-  }
+		if(candi >=1 & candi <=10) {
+			return true;
+	}
+	else {
+		return false;
+		}
+	}
 }
 
 function validateForm(){
@@ -32,3 +42,4 @@ function validateForm(){
 		}
 	}
 }
+
