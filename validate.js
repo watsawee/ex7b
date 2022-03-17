@@ -11,8 +11,13 @@ function checkCandiNo() {
   if (isNaN(candi) || candi < 1) {
     return false;
   } else {
-    return true;
-  }
+		if(candi >=1 & candi <=10) {
+			return true;
+	}
+	else {
+		return false;
+		}
+	}
 }
 function validateForm(){
 	if(!checkSID()){
