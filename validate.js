@@ -1,15 +1,19 @@
-function checkSID() {
+function checkSID() {	
   let sid = (document.getElementById("sid").value).trim();
-  if (sid.length == 10) {
+  var i = ("0123456789");
+  for (sid == i)
+  if (sid.length == 10)	   
     return true;
-  } else {
+  } 
+  for(sid != i)
+  else  (){
     return false;
   }
 }
 
 function checkCandiNo() {
   let candi = (document.getElementById("candi").value).trim();
-  if (isNaN(candi) || candi < 1) {
+  if (isNaN(candi) || candi > 10 && candi < 1 ) {  
     return false;
   } else {
     return true;
