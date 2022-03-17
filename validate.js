@@ -1,6 +1,6 @@
 function checkSID() {
   let sid = (document.getElementById("sid").value).trim();
-  if (sid.length == 10) {
+  if ( sid.length == 10  && !isNaN(sid) ) {
     return true;
   } else {
     return false;
@@ -8,13 +8,16 @@ function checkSID() {
 }
 
 function checkCandiNo() {
-  let candi = (document.getElementById("candi").value).trim();
-  if (isNaN(candi) || candi < 1) {
-    return false;
-  } else {
-    return true;
+	let candi = (document.getElementById("candi").value).trim();
+	if ( candi.length < 1 || candi.length > 10 ){
+		return false;
+	}
+	if ( isNaN(candi) ) {
+	  return false;
+	} else {
+	  return true;
+	}
   }
-}
 
 function validateForm(){
 	if(!checkSID()){
