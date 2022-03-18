@@ -11,24 +11,24 @@
 <div class="container mt-3">
 <h2>Student President Vote</h2>
 <form action="#" method="post" onsubmit="return validateForm()">
-    <div class="mb-3 mt-3">
+    <div class="mb-3 mt-3" required>
         <label for="title" class="form-label">Student ID<span style="color:red">*</span></label>
         <input type="text" class="form-control" id="sid" name="sid"/>
     </div>
-    <div class="mb-3 mt-3">
+    <div class="mb-3 mt-3" required>
         <label for="title" class="form-label">First Name<span style="color:red">*</span></label>
         <input type="text" class="form-control" id="fname" name="fname"/>
     </div>
-    <div class="mb-3 mt-3">
+    <div class="mb-3 mt-3" required>
         <label for="title" class="form-label">Last Name<span style="color:red">*</span></label>
         <input type="text" class="form-control" id="lname" name="lname"/>
     </div>
-    <div class="mb-3 mt-3">
+    <div class="mb-3 mt-3" required>
         <label class="form-label">Gender<span style="color:red">*</span></label>&nbsp;&nbsp;
         <input type="radio" class="form-check-input" id="gender1" name="optradio" value="1" checked>&nbsp; Male &nbsp;&nbsp;
 		<input type="radio" class="form-check-input" id="gender2" name="optradio" value="2">&nbsp; Female
     </div>
-    <div class="mb-3 mt-3">
+    <div class="mb-3 mt-3" required>
         <label for="school" class="form-label">School/Faculty<span style="color:red">*</span></label>
         <select class="form-select" id="school" name="school">
 		  <option value="1">School of Science and Technology</option>
@@ -39,7 +39,7 @@
 		  <option value="6">School of Communication Arts</option>
 		</select>
     </div>
-    <div class="mb-3 mt-3">
+    <div class="mb-3 mt-3" required>
         <label for="candi" class="form-label">Candidate No.<span style="color:red">*</span></label>
         <input type="text" class="form-control" id="candi" name="candi"/>
     </div>
