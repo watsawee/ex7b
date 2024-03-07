@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/wordcnt', function (req, res) {
+  res.send("word count API");	
+});
+
 module.exports = router;
