@@ -7,7 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/wordcnt', function (req, res) {
-  res.send("word count API");	
+  let fav_team = req.params.fav_team;
+  res.send("word count API"+fav_team);	
 });
 
 module.exports = router;
